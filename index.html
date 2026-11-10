@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Sujal Kumar — Software Engineer &amp; Systems Builder</title>
-  <meta name="description" content="Sujal Kumar is a Mathematics &amp; Computing student at NIT Jalandhar (9.02 CGPA) specializing in C++, Systems Programming, Low-Latency Architecture, and AI/ML.">
+  <meta name="description" content="Sujal Kumar is a Mathematics &amp; Computing undergraduate at NIT Jalandhar (9.02 CGPA, top 10% batch) specializing in C++ Systems Programming, Low-Latency Architecture, and AI/RAG.">
   <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
   
-  <!-- Canonical & OpenGraph -->
+  <!-- OpenGraph -->
   <meta property="og:title" content="Sujal Kumar — Software Engineer &amp; Systems Builder">
-  <meta property="og:description" content="B.Tech Mathematics &amp; Computing at NIT Jalandhar (9.02 CGPA) building intelligent systems and high-performance software.">
+  <meta property="og:description" content="Engineering high-performance systems, low-latency matching engines, and grounded RAG applications. B.Tech M&amp;C at NIT Jalandhar (9.02 CGPA).">
   <meta property="og:type" content="website">
   
   <link rel="stylesheet" href="css/style.css">
@@ -17,28 +17,29 @@
 <body>
 
   <!-- ========================================================================
-       SITE HEADER & NAVIGATION
+       SITE HEADER & NAVIGATION (Exclusively Light Mode)
        ======================================================================== -->
   <header class="site-header">
     <div class="wrap site-nav">
       <a href="#home" class="nav-brand" aria-label="Sujal Kumar Home">
-        Sujal Kumar<span class="dot">.</span>
+        Sujal Kumar<span class="brand-badge">M&amp;C</span>
       </a>
 
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#home" class="active">Overview</a></li>
+          <li><a href="#pillars">Pillars</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#academics">Education</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#certifications">Recognition</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <!-- Social Quick Links -->
+        <!-- Social Links -->
         <a href="https://github.com/Sujal01go" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="GitHub Profile" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -51,21 +52,14 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
-        <a href="https://leetcode.com/u/sujal01go/" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="LeetCode Profile" aria-label="LeetCode">
+        <a href="https://leetcode.com/u/sujal01go/" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="LeetCode Profile (250+ Solved)" aria-label="LeetCode">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
         </a>
 
-        <!-- Dark / Light Mode Switcher -->
-        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-          </svg>
-        </button>
-
-        <!-- Mobile Menu Hamburger -->
+        <!-- Mobile Menu Toggle Button -->
         <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open Navigation Menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -78,12 +72,13 @@
 
     <!-- Mobile Drawer -->
     <div id="mobileNav" class="mobile-nav">
-      <a href="#home">Home</a>
+      <a href="#home">Overview</a>
+      <a href="#pillars">Core Pillars</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-      <a href="#academics">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#certifications">Recognition</a>
       <a href="#contact">Contact</a>
       <a href="assets/resume/Sujal_Kumar_Resume.pdf" download="Sujal_Kumar_Resume.pdf" style="color: var(--accent); font-weight: 700;">📥 Download Résumé (PDF)</a>
       <a href="assets/resume/resume.html" target="_blank">📄 View Web Résumé</a>
@@ -91,39 +86,43 @@
   </header>
 
   <!-- ========================================================================
-       HERO SECTION
+       HERO SECTION (Original & Distinctive for Sujal Kumar)
        ======================================================================== -->
   <section class="section hero" id="home">
     <div class="wrap hero-grid">
-      <!-- Left Column: Editorial Intro -->
+      <!-- Left Column: High-Impact Engineering Introduction -->
       <div class="hero-content">
-        <h1 class="hero-greeting">Hello 👋</h1>
+        <div class="hero-status-bar">
+          <span class="status-dot"></span>
+          <span class="hero-status-text">NIT JALANDHAR • B.TECH M&amp;C • 9.02 CGPA</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Engineering High-Performance Systems &amp; <span class="gradient-text">Intelligent Retrieval.</span>
+        </h1>
         
         <p class="hero-lead">
-          I am <strong>Sujal Kumar</strong>, a <strong>B.Tech Mathematics &amp; Computing student at NIT Jalandhar (9.02 CGPA)</strong> with hands-on experience building retrieval-augmented AI systems, backend APIs, and C++ systems software.
+          I am <strong>Sujal Kumar</strong>, a Mathematics &amp; Computing undergraduate at 
+          <strong>NIT Jalandhar (top 10% batch)</strong> with hands-on experience developing low-latency C++ systems, retrieval-augmented AI platforms, and backend infrastructure.
         </p>
 
         <p class="hero-note">
-          "Open-source contributor interested in low-latency engineering, information retrieval, and production-grade applications. Focused on predictive execution paths, predictable memory management, and grounded multi-modal intelligence."
+          "Focused on predictable execution paths, fine-grained memory layout control in C++, and grounded document intelligence pipelines separating unstructured evidence retrieval from reliable analytical queries."
         </p>
 
-        <!-- Exploring Pills -->
-        <div class="hero-exploring">
-          <span class="hero-exploring-label">Focus Areas</span>
-          <div class="exploring-tags">
-            <span class="tag-pill">C++ Systems Programming</span>
-            <span class="tag-pill">Low-Latency Engineering</span>
-            <span class="tag-pill">Retrieval-Augmented Generation (RAG)</span>
-            <span class="tag-pill">Backend APIs &amp; FastAPI</span>
-            <span class="tag-pill">Mathematics &amp; Computing</span>
-            <span class="tag-pill">Data Structures &amp; Algorithms</span>
-          </div>
+        <!-- Focus Tags -->
+        <div class="hero-focus-tags">
+          <span class="focus-chip highlight">C++ Systems Programming</span>
+          <span class="focus-chip highlight">Low-Latency Order Books</span>
+          <span class="focus-chip">RAG &amp; Azure AI Search</span>
+          <span class="focus-chip">FastAPI &amp; PostgreSQL</span>
+          <span class="focus-chip">Data Structures &amp; Algorithms</span>
         </div>
 
         <!-- Action Buttons -->
         <div class="hero-actions">
           <a href="#projects" class="button button-primary">
-            View Projects
+            Explore Projects
             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-out" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
             </svg>
@@ -134,62 +133,189 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
           </a>
-          <a href="assets/resume/resume.html" target="_blank" class="button" title="View Web Version">
-            View Web Résumé
-            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-out" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+          <a href="#contact" class="button">
+            Contact Me
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
           </a>
         </div>
       </div>
 
-      <!-- Right Column: Profile Showcase Card -->
-      <div class="hero-card">
-        <div class="hero-card-header">
-          <div style="display: flex; align-items: center; gap: 0.5rem;">
-            <span class="status-dot"></span>
-            <span class="badge badge-green">Open for Internships</span>
+      <!-- Right Column: Interactive Systems & Architecture Console -->
+      <div class="systems-console">
+        <div class="console-header">
+          <div class="console-window-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
           </div>
-          <span style="font-size: 0.76rem; font-family: var(--mono); color: var(--text-muted);">NIT JALANDHAR</span>
+          <span class="console-title">sujal@nitj-systems:~</span>
+          <span style="font-size: 0.72rem; color: #34d399; font-weight: 700;">LIVE</span>
         </div>
 
-        <div class="hero-card-img-wrap">
-          <img src="assets/images/avatar.svg" alt="Sujal Kumar Profile" class="hero-card-img">
+        <div class="console-body">
+          <div class="console-prompt-line">
+            <span class="user">sujal</span>@<span class="path">nitj-mc</span>:~$ sysctl --status -v
+          </div>
+
+          <table class="console-table">
+            <tr>
+              <td class="key">STUDENT</td>
+              <td class="val"><strong>Sujal Kumar</strong></td>
+            </tr>
+            <tr>
+              <td class="key">INSTITUTION</td>
+              <td class="val">NIT Jalandhar (2025–2029)</td>
+            </tr>
+            <tr>
+              <td class="key">DISCIPLINE</td>
+              <td class="val">B.Tech Mathematics &amp; Computing</td>
+            </tr>
+            <tr>
+              <td class="key">ACADEMIC</td>
+              <td class="val"><strong>9.02 CGPA</strong> (Top 10% Batch)</td>
+            </tr>
+            <tr>
+              <td class="key">PROBLEM SOLV</td>
+              <td class="val"><strong>250+ LeetCode DSA</strong> Solved</td>
+            </tr>
+            <tr>
+              <td class="key">SYSTEMS ENG</td>
+              <td class="val">C++20 (Price-Time LOB Matching Engine)</td>
+            </tr>
+            <tr>
+              <td class="key">AI / RAG</td>
+              <td class="val">Azure AI Search + GPT-4o + PostgreSQL</td>
+            </tr>
+            <tr>
+              <td class="key">CAMPUS ROLE</td>
+              <td class="val">Software Dev @ Campus Node (NITJ)</td>
+            </tr>
+          </table>
+
+          <div class="console-pills-row">
+            <span class="console-pill">C++</span>
+            <span class="console-pill">FastAPI</span>
+            <span class="console-pill">Azure OpenAI</span>
+            <span class="console-pill">PostgreSQL</span>
+            <span class="console-pill">Flutter</span>
+            <span class="console-pill">Docker</span>
+          </div>
         </div>
 
-        <div class="hero-card-body">
-          <div class="hero-stat-item">
-            <span class="stat-num">9.02</span>
-            <span class="stat-lbl">CGPA (Top 10%)</span>
-          </div>
-          <div class="hero-stat-item">
-            <span class="stat-num">250+</span>
-            <span class="stat-lbl">LeetCode Solved</span>
-          </div>
-          <div class="hero-stat-item">
-            <span class="stat-num">2025–29</span>
-            <span class="stat-lbl">B.Tech M&amp;C</span>
-          </div>
+        <div class="console-telemetry-bar">
+          <span class="active-node">
+            <span class="status-dot"></span> Available for Summer 2025/2026 Internships
+          </span>
+          <span>Jalandhar, IN</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       FEATURED PROJECTS SECTION (Resume Priority + Additional Cool Projects)
+       THREE CORE PILLARS SECTION (Distinctive Engineering Architecture)
+       ======================================================================== -->
+  <section class="section" id="pillars">
+    <div class="wrap">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Core Engineering Pillars</h2>
+          <p class="section-subtitle">The three primary domains defining my technical work and software architecture.</p>
+        </div>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <!-- Pillar 1: Systems & C++ -->
+        <div class="pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <span class="pillar-num">PILLAR 01</span>
+              <h3 class="pillar-title">C++ &amp; Systems Programming</h3>
+            </div>
+          </div>
+          <p class="pillar-desc">
+            Emphasizing predictable execution paths, cache-conscious data structures, and deterministic memory allocation. Engineering core exchange order-book management and Price-Time Priority matching algorithms suited to latency-sensitive workloads.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">C++</span>
+            <span class="pillar-tag">L3 Order Book</span>
+            <span class="pillar-tag">FIFO Matching</span>
+            <span class="pillar-tag">Memory Layout</span>
+            <span class="pillar-tag">STL</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: AI & RAG -->
+        <div class="pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+            </div>
+            <div>
+              <span class="pillar-num">PILLAR 02</span>
+              <h3 class="pillar-title">Grounded RAG &amp; Information Retrieval</h3>
+            </div>
+          </div>
+          <p class="pillar-desc">
+            Architecting end-to-end document intelligence systems. Converting complex SEC filings with PyMuPDF4LLM into Markdown while preserving tables, indexing in Azure AI Search with hybrid BM25/vector search, and using GPT-4o for KPI extraction into PostgreSQL.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">RAG</span>
+            <span class="pillar-tag">Azure AI Search</span>
+            <span class="pillar-tag">GPT-4o</span>
+            <span class="pillar-tag">Semantic Chunking</span>
+            <span class="pillar-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Backend & Full Stack -->
+        <div class="pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <div>
+              <span class="pillar-num">PILLAR 03</span>
+              <h3 class="pillar-title">Production Backend &amp; Applications</h3>
+            </div>
+          </div>
+          <p class="pillar-desc">
+            Developing high-throughput RESTful services with FastAPI and building cross-platform Flutter/Dart applications. Engineering campus-scale event management workflows at Campus Node (NIT Jalandhar) and contributing to open-source via GSSoC.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">FastAPI</span>
+            <span class="pillar-tag">PostgreSQL</span>
+            <span class="pillar-tag">Flutter</span>
+            <span class="pillar-tag">Firebase</span>
+            <span class="pillar-tag">Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SECTION (With Architecture Distinctions)
        ======================================================================== -->
   <section class="section section-soft" id="projects">
     <div class="wrap-wide">
       <div class="section-header">
         <div>
-          <h2 class="section-title">Projects</h2>
-          <p class="section-subtitle">Systems engineering, AI-powered intelligence, and applied mathematical software.</p>
+          <h2 class="section-title">Engineering Projects</h2>
+          <p class="section-subtitle">Real-world systems, document intelligence pipelines, and mobile applications.</p>
         </div>
 
-        <!-- Category Filters -->
+        <!-- Filter Tabs -->
         <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="resume">Resume Featured</button>
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="resume">Resume Core</button>
           <button class="filter-btn" data-filter="systems">C++ &amp; Systems</button>
           <button class="filter-btn" data-filter="ai">AI / ML &amp; RAG</button>
           <button class="filter-btn" data-filter="mobile">Mobile &amp; Web</button>
@@ -198,7 +324,7 @@
 
       <div class="project-grid">
         
-        <!-- RESUME PROJECT 01: Financial Intelligence & RAG Engine -->
+        <!-- PROJECT 01: Financial Intelligence & RAG Engine -->
         <article class="project-tile" data-category="resume ai">
           <a href="#" class="project-cover-link" data-project-trigger="investintel" aria-label="View Financial Intelligence & RAG Engine">
             <div class="project-cover blue">
@@ -208,19 +334,24 @@
           <div class="project-copy">
             <div class="project-meta-top">
               <span class="project-category">AI / Backend Engineering</span>
-              <span class="badge badge-blue">Resume Project • 2026</span>
+              <span class="badge badge-blue">Resume Core • 2026</span>
             </div>
             <h3 class="project-title">
               <a href="#" data-project-trigger="investintel">Financial Intelligence &amp; RAG Engine</a>
             </h3>
             <p class="project-desc">
-              End-to-end financial filing intelligence platform processing 10-K/10-Q corporate disclosures with PyMuPDF4LLM into structured Markdown while preserving financial tables, headings, and disclosure context.
+              End-to-end financial filing intelligence platform processing 10-K/10-Q corporate disclosures with PyMuPDF4LLM into structured Markdown while retaining financial tables, headings, and disclosure context.
             </p>
+
+            <!-- Distinctive Architecture Box -->
+            <div class="arch-distinction-box">
+              <strong>Architecture Distinction:</strong> Separates unstructured evidence retrieval (Azure AI Search hybrid keyword/vector search) from reliable structured queries (PostgreSQL) via GPT-4o KPI extraction.
+            </div>
+
             <ul class="project-highlights">
-              <li>Context-aware semantic chunking &amp; embedding-based indexing in Azure AI Search with hybrid keyword/vector retrieval.</li>
-              <li>GPT-4o extraction of quantitative KPIs (revenue, net income, operating cash flow) and qualitative growth drivers into PostgreSQL.</li>
-              <li>FastAPI endpoints and financial analytics dashboard for KPI inspection, fiscal-year scoping, and grounded conversational answers.</li>
-              <li><strong>Technology distinction:</strong> Azure AI Search handles retrieval, GPT-4o performs extraction/synthesis, and PostgreSQL stores structured metrics.</li>
+              <li>Context-aware semantic chunking and embedding-based indexing in Azure AI Search.</li>
+              <li>GPT-4o extraction of quantitative KPIs (revenue, net income, cash flow) and qualitative risk factors into PostgreSQL.</li>
+              <li>FastAPI endpoints and financial analytics dashboard for KPI inspection, fiscal-year scoping, and grounded conversational Q&amp;A.</li>
             </ul>
             <div class="project-tech-stack">
               <span class="tech-tag">Python</span>
@@ -232,18 +363,18 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/Sujal01go/AI-Invester-intelligence-platform" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                GitHub Repo
+                GitHub Repository
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
               </a>
               <a href="#" data-project-trigger="investintel" class="project-link-btn">
-                Technical Details
+                System Details
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"></path></svg>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- RESUME PROJECT 02: Low-Latency Exchange Matching Engine -->
+        <!-- PROJECT 02: Low-Latency Exchange Matching Engine -->
         <article class="project-tile" data-category="resume systems">
           <a href="#" class="project-cover-link" data-project-trigger="matching_engine" aria-label="View Matching Engine">
             <div class="project-cover lavender">
@@ -253,25 +384,31 @@
           <div class="project-copy">
             <div class="project-meta-top">
               <span class="project-category">C++ / Systems Programming</span>
-              <span class="badge badge-purple">Resume Project • In Progress</span>
+              <span class="badge badge-purple">Resume Core • In Progress</span>
             </div>
             <h3 class="project-title">
               <a href="#" data-project-trigger="matching_engine">Low-Latency Exchange Matching Engine</a>
             </h3>
             <p class="project-desc">
-              Systems-programming project focused on the core financial exchange workflow: order intake, order-book management, price-time priority matching, and trade execution.
+              Systems-programming project focused on the core financial exchange workflow: order intake, order-book management, matching, and trade execution.
             </p>
+
+            <!-- Distinctive Architecture Box -->
+            <div class="arch-distinction-box">
+              <strong>Technology Distinction:</strong> C++ provides fine-grained control over object lifetime, memory layout, and allocation; the project explores these systems-level trade-offs in an exchange-style workload.
+            </div>
+
             <ul class="project-highlights">
               <li>Emphasizing predictable execution paths, efficient memory use, and data structures suited to latency-sensitive workloads.</li>
-              <li><strong>Technology distinction:</strong> C++ provides fine-grained control over object lifetime, memory layout, and allocation.</li>
-              <li><strong>Current status:</strong> In progress; performance figures and completed feature claims are intentionally omitted until benchmarked and verified.</li>
+              <li>Avoids general-purpose abstractions in favor of cache-aligned, contiguous order structures.</li>
+              <li><strong>Current Status:</strong> In progress; performance figures and completed feature claims are intentionally omitted until benchmarked and verified.</li>
             </ul>
             <div class="project-tech-stack">
               <span class="tech-tag">C++</span>
               <span class="tech-tag">STL</span>
               <span class="tech-tag">Order Book</span>
               <span class="tech-tag">Low-Latency</span>
-              <span class="tech-tag">Systems Programming</span>
+              <span class="tech-tag">Price-Time Priority</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/Sujal01go" target="_blank" rel="noopener noreferrer" class="project-link-btn">
@@ -279,14 +416,14 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
               </a>
               <a href="#" data-project-trigger="matching_engine" class="project-link-btn">
-                Technical Details
+                System Details
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"></path></svg>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- RESUME PROJECT 03: Sanjeevani Herbal Wellness Application -->
+        <!-- PROJECT 03: Sanjeevani Herbal Wellness Application -->
         <article class="project-tile" data-category="resume mobile">
           <a href="#" class="project-cover-link" data-project-trigger="sanjeevani" aria-label="View Sanjeevani">
             <div class="project-cover sand">
@@ -296,18 +433,24 @@
           <div class="project-copy">
             <div class="project-meta-top">
               <span class="project-category">Mobile Dev / Healthcare</span>
-              <span class="badge badge-green">Resume Project • Jan–Feb 2026</span>
+              <span class="badge badge-green">Resume Core • Jan–Feb 2026</span>
             </div>
             <h3 class="project-title">
               <a href="#" data-project-trigger="sanjeevani">Sanjeevani — Herbal Wellness Application</a>
             </h3>
             <p class="project-desc">
-              Cross-platform wellness application built with Flutter, Dart, and Firebase featuring symptom-based herb recommendations, secure authentication, and user cart-management workflows.
+              Cross-platform wellness application built with Flutter, Dart, and Firebase featuring symptom-based herb recommendations, secure authentication, user profiles, and cart-management workflows.
             </p>
+
+            <!-- Distinctive Architecture Box -->
+            <div class="arch-distinction-box">
+              <strong>Technology Distinction:</strong> Implemented a Material Design 3 interface for Android, iOS, and Web, using Firebase services for authentication and application data workflows.
+            </div>
+
             <ul class="project-highlights">
-              <li>Intelligent symptom/disease-based herb recommendation mapping.</li>
-              <li>Material Design 3 interface implemented for Android, iOS, and Web.</li>
-              <li>Firebase services integration for user authentication and real-time application data workflows.</li>
+              <li>Symptom-based medicinal herb recommendation matching algorithms.</li>
+              <li>Firebase Authentication integration providing secure user credential flows.</li>
+              <li>Real-time user profiles and cart-management state synchronization.</li>
             </ul>
             <div class="project-tech-stack">
               <span class="tech-tag">Flutter</span>
@@ -318,7 +461,7 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/Sujal01go/sanjeevani" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                GitHub Repo
+                GitHub Repository
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
               </a>
               <a href="#" data-project-trigger="sanjeevani" class="project-link-btn">
@@ -329,7 +472,7 @@
           </div>
         </article>
 
-        <!-- ADDITIONAL COOL PROJECT: AstroTrack Astronomy Engine -->
+        <!-- PROJECT 04: AstroTrack Astronomy Engine -->
         <article class="project-tile" data-category="systems mobile">
           <a href="#" class="project-cover-link" data-project-trigger="astrotrack" aria-label="View AstroTrack">
             <div class="project-cover sky">
@@ -338,11 +481,11 @@
           </a>
           <div class="project-copy">
             <div class="project-meta-top">
-              <span class="project-category">Applied Math / Mobile</span>
+              <span class="project-category">Applied Math / Mobile Systems</span>
               <span class="badge badge-blue">Offline First</span>
             </div>
             <h3 class="project-title">
-              <a href="#" data-project-trigger="astrotrack">AstroTrack — Mathematical Astronomy &amp; Star Tracker</a>
+              <a href="#" data-project-trigger="astrotrack">AstroTrack — Astronomy &amp; Star Tracker</a>
             </h3>
             <p class="project-desc">
               Offline-first mobile astronomy engine converting astronomical catalogue coordinates (Hipparcos &amp; Yale Bright Star) into local horizontal coordinates via spherical trigonometry and AR sensor attitude tracking.
@@ -370,7 +513,7 @@
           </div>
         </article>
 
-        <!-- ADDITIONAL COOL PROJECT: Multi-Agent Team -->
+        <!-- PROJECT 05: Multi-Agent Team -->
         <article class="project-tile" data-category="ai">
           <a href="#" class="project-cover-link" data-project-trigger="multiagent" aria-label="View Multi-Agent Team">
             <div class="project-cover mint">
@@ -379,11 +522,11 @@
           </a>
           <div class="project-copy">
             <div class="project-meta-top">
-              <span class="project-category">AI Agents / Multi-Agent</span>
+              <span class="project-category">AI Multi-Agent Systems</span>
               <span class="badge badge-amber">Flip the Switch Hackathon</span>
             </div>
             <h3 class="project-title">
-              <a href="#" data-project-trigger="multiagent">Autonomous Multi-Agent Software Engineering Team</a>
+              <a href="#" data-project-trigger="multiagent">Autonomous Multi-Agent Engineering Team</a>
             </h3>
             <p class="project-desc">
               Autonomous engineering agent collective coordinating over Telegram using Switch communication infrastructure, orchestrated via LangGraph state machines, and persisted with SQLite checkpointers.
@@ -411,7 +554,7 @@
           </div>
         </article>
 
-        <!-- ADDITIONAL COOL PROJECT: Aditya-L1 ML -->
+        <!-- PROJECT 06: Aditya-L1 ML -->
         <article class="project-tile" data-category="ai">
           <a href="#" class="project-cover-link" data-project-trigger="aditya" aria-label="View Aditya-L1 ML">
             <div class="project-cover rose">
@@ -457,14 +600,18 @@
   </section>
 
   <!-- ========================================================================
-       EXPERIENCE SECTION (Exact Resume Content)
+       EXPERIENCE SECTION (Campus Node & GSSoC)
        ======================================================================== -->
   <section class="section" id="experience">
     <div class="wrap">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">Software engineering and open-source contributions.</p>
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Software engineering and open-source contributions.</p>
+        </div>
+      </div>
 
-      <div class="experience-list" style="margin-top: 2rem;">
+      <div class="experience-list">
 
         <!-- Exp 1: Campus Node -->
         <article class="experience-row">
@@ -502,14 +649,18 @@
   </section>
 
   <!-- ========================================================================
-       EDUCATION SECTION (Exact Resume Content)
+       EDUCATION & PROBLEM SOLVING SECTION
        ======================================================================== -->
-  <section class="section section-soft" id="academics">
+  <section class="section section-soft" id="education">
     <div class="wrap">
-      <h2 class="section-title">Education</h2>
-      <p class="section-subtitle">Academic record and coursework at National Institute of Technology, Jalandhar.</p>
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Education &amp; Problem Solving</h2>
+          <p class="section-subtitle">Academic record at NIT Jalandhar and algorithmic practice.</p>
+        </div>
+      </div>
 
-      <div class="academics-grid" style="margin-top: 2rem;">
+      <div class="academics-grid">
         
         <!-- Academic Credentials Card -->
         <div class="academic-card">
@@ -544,18 +695,18 @@
         <!-- Problem Solving & LeetCode Widget -->
         <div class="academic-card" style="justify-content: space-between;">
           <div>
-            <span class="badge badge-amber">Competitive Programming</span>
+            <span class="badge badge-amber">Algorithmic Problem Solving</span>
             <div style="margin-top: 1rem;">
               <div style="font-size: 3rem; font-weight: 800; font-family: var(--mono); color: #f59e0b; line-height: 1;">250+</div>
               <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.35rem;">DSA Questions Solved</div>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">
-                Actively practicing Data Structures &amp; Algorithms on LeetCode covering dynamic programming, trees, graphs, and two-pointer patterns.
+                Actively practicing on LeetCode covering dynamic programming, binary search trees, graph traversals, and two-pointer patterns.
               </p>
             </div>
           </div>
           <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule);">
             <a href="https://leetcode.com/u/sujal01go/" target="_blank" rel="noopener noreferrer" class="button" style="width: 100%;">
-              View LeetCode Profile
+              View LeetCode Profile (250+)
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 13px; height: 13px;"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
             </a>
           </div>
@@ -566,14 +717,18 @@
   </section>
 
   <!-- ========================================================================
-       TECHNICAL SKILLS SECTION (Exact Resume Skills)
+       TECHNICAL SKILLS MATRIX (Exact Resume Skills)
        ======================================================================== -->
   <section class="section" id="skills">
     <div class="wrap">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-subtitle">Categorized skills directly from verified software development experience.</p>
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core competencies across programming languages, backend systems, and AI.</p>
+        </div>
+      </div>
 
-      <div class="skills-matrix" style="margin-top: 2rem;">
+      <div class="skills-matrix">
 
         <!-- Card 1: Programming Languages -->
         <div class="skill-category-card">
@@ -652,7 +807,7 @@
           </div>
         </div>
 
-        <!-- Card 6: Mobile & Frontends -->
+        <!-- Card 6: Mobile & Frameworks -->
         <div class="skill-category-card">
           <div class="skill-cat-header">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
@@ -663,7 +818,7 @@
             <span class="skill-pill highlight">Dart</span>
             <span class="skill-pill highlight">Firebase</span>
             <span class="skill-pill">Material Design 3</span>
-            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">Responsive Web</span>
           </div>
         </div>
 
@@ -672,19 +827,23 @@
   </section>
 
   <!-- ========================================================================
-       CERTIFICATIONS & ACHIEVEMENTS SECTION (Exact Resume Content)
+       CERTIFICATIONS & RECOGNITION SECTION
        ======================================================================== -->
   <section class="section section-soft" id="certifications">
     <div class="wrap">
-      <h2 class="section-title">Certifications &amp; Achievements</h2>
-      <p class="section-subtitle">Verified technical programs, competition distinctions, and leadership roles.</p>
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Certifications &amp; Recognition</h2>
+          <p class="section-subtitle">Verified programs and national competition distinctions.</p>
+        </div>
+      </div>
 
-      <div class="cert-grid" style="margin-top: 2rem;">
+      <div class="cert-grid">
 
         <!-- Cert 1: ISRO IIRS -->
         <div class="cert-card">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 22px; height: 22px;"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
           </div>
           <div class="cert-content">
             <h4>AI/ML for Geodata Analytics</h4>
@@ -696,7 +855,7 @@
         <!-- Cert 2: Deloitte -->
         <div class="cert-card">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 22px; height: 22px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
           <div class="cert-content">
             <h4>Cyber Job Simulation</h4>
@@ -708,7 +867,7 @@
         <!-- Achievement 1: BIS Hackathon -->
         <div class="cert-card">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"></path></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 22px; height: 22px;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"></path></svg>
           </div>
           <div class="cert-content">
             <h4>Top 10 Team — BIS Innovation Hackathon</h4>
@@ -720,11 +879,11 @@
         <!-- Achievement 2: Utkansh -->
         <div class="cert-card">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 22px; height: 22px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
           </div>
           <div class="cert-content">
             <h4>Organizing Team Member — Utkansh Fest</h4>
-            <div class="cert-org">NIT Jalandhar Flagship Cultural Festival</div>
+            <div class="cert-org">NIT Jalandhar Cultural Festival</div>
             <p class="cert-desc">Supported event coordination, campus management, and student participation for the institute's largest annual festival.</p>
           </div>
         </div>
@@ -786,9 +945,9 @@
         </div>
       </div>
 
-      <!-- Right: Interactive Quick Message Form -->
+      <!-- Right: Quick Message Form -->
       <div class="contact-card">
-        <h3 style="margin: 0 0 1.25rem 0; font-size: 1.15rem; font-weight: 700;">Send a Quick Note</h3>
+        <h3 style="margin: 0 0 1.25rem 0; font-size: 1.15rem; font-weight: 800;">Send a Quick Note</h3>
         <form id="contactForm" class="contact-form">
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -813,7 +972,7 @@
   </section>
 
   <!-- ========================================================================
-       FOOTER (Exact Rishi Ahuja 3-Column Editorial Aesthetic)
+       FOOTER (Exclusive Light Theme)
        ======================================================================== -->
   <footer class="site-footer">
     <div class="wrap">
@@ -832,15 +991,17 @@
 
       <div class="footer-columns">
         
-        <!-- Column 1: Explore -->
+        <!-- Column 1: Navigation -->
         <nav class="footer-group" aria-label="Explore">
           <h3>Explore</h3>
           <ul>
+            <li><a href="#home">Overview</a></li>
+            <li><a href="#pillars">Core Pillars</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#academics">Education</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Technical Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#certifications">Recognition</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
