@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="sunGlow" cx="20%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="40%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#090d16" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="#090d16"/>
+  
+  <!-- Sun Disk and Corona -->
+  <g transform="translate(90, 200)">
+    <circle cx="0" cy="0" r="110" fill="url(#sunGlow)"/>
+    <!-- Solar Flare Prominences -->
+    <path d="M 80 -40 C 140 -90, 160 -10, 100 20" stroke="#f97316" stroke-width="3" fill="none" opacity="0.85"/>
+    <path d="M 60 70 C 130 110, 150 140, 80 100" stroke="#fbbf24" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <!-- Magnetic Field Lines -->
+    <circle cx="0" cy="0" r="130" stroke="#ea580c" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+    <circle cx="0" cy="0" r="150" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5 5" opacity="0.3"/>
+  </g>
+
+  <!-- ISRO Aditya-L1 Satellite / Instruments Telemetry -->
+  <g transform="translate(260, 50)">
+    <rect x="0" y="0" width="280" height="290" rx="10" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <text x="20" y="28" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">ADITYA-L1 • SoLEXS &amp; HEL1OS</text>
+    <text x="20" y="44" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="9.5">Solar Flare Nowcasting &amp; Prediction</text>
+    <line x1="0" y1="56" x2="280" y2="56" stroke="#1f2937" stroke-width="1"/>
+
+    <!-- Soft X-Ray & Hard X-Ray Time Series Waveform -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="14" fill="#60a5fa" font-family="'JetBrains Mono', monospace" font-size="9.5">SoLEXS (Soft X-Ray Flux)</text>
+      <rect x="0" y="22" width="240" height="50" rx="4" fill="#030712" stroke="#1e293b"/>
+      <!-- Soft X-ray flare curve -->
+      <path d="M 10 55 L 60 52 L 100 48 L 120 18 L 140 32 L 180 44 L 230 48" stroke="#38bdf8" stroke-width="2" fill="none"/>
+      <circle cx="120" cy="18" r="3" fill="#38bdf8"/>
+    </g>
+
+    <g transform="translate(20, 155)">
+      <text x="0" y="14" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="9.5">HEL1OS (Hard X-Ray Energetics)</text>
+      <rect x="0" y="22" width="240" height="50" rx="4" fill="#030712" stroke="#1e293b"/>
+      <!-- Hard X-ray high-energy burst -->
+      <path d="M 10 56 L 80 55 L 115 14 L 130 42 L 160 52 L 230 55" stroke="#f97316" stroke-width="2" fill="none"/>
+      <circle cx="115" cy="14" r="3" fill="#f97316"/>
+    </g>
+
+    <!-- Transformer Architecture Pill -->
+    <rect x="20" y="245" width="240" height="26" rx="6" fill="#1e293b"/>
+    <text x="140" y="262" fill="#e5e7eb" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" text-anchor="middle">TRANSFORMER TIME-SERIES ATTENTION</text>
+  </g>
+</svg>
