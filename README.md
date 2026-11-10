@@ -1,7 +1,7 @@
 # Sujal Kumar — Personal Engineering Portfolio
 
 > **High-Performance Systems & Intelligent Retrieval**  
-> An editorial, high-craft, and mobile-optimized portfolio for **Sujal Kumar**, an undergraduate in **Mathematics & Computing (M&C)** at **NIT Jalandhar** (9.02 CGPA, Top 10% Batch), specializing in **C++ & Systems Programming**, **Low-Latency Order Books**, **AI/ML (RAG)**, and **Backend Infrastructure**.
+> An editorial, high-craft, and mobile-optimized portfolio for **Sujal Kumar**, an undergraduate in **Mathematics & Computing (M&C)** at **NIT Jalandhar** (9.02 CGPA, Top 10% Batch), specializing in **C++ & Systems Programming**, **Low-Latency Order Books**, **AI/ML (Fine-Tuning, Inferencing, Agent Loops, RAG)**, and **Backend Infrastructure**.
 
 ---
 
