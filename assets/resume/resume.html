@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sujal Gupta — Résumé</title>
+  <title>Sujal Kumar — Résumé</title>
   <style>
     :root {
       --text: #1e293b;
@@ -18,98 +18,106 @@
       color: var(--text);
       background: #f1f5f9;
       line-height: 1.45;
-      font-size: 13.5px;
-      padding: 30px 15px;
+      font-size: 13px;
+      padding: 24px 12px;
     }
     .page {
       max-width: 820px;
       margin: 0 auto;
       background: var(--bg);
-      padding: 44px 48px;
+      padding: 40px 48px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       border-radius: 4px;
     }
     .header {
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 16px;
-      margin-bottom: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      text-align: center;
     }
     .header h1 {
       font-size: 26px;
-      font-weight: 700;
+      font-weight: 800;
       color: #0f172a;
-      letter-spacing: -0.5px;
-    }
-    .header .subtitle {
-      font-size: 13.5px;
-      color: var(--accent);
-      font-weight: 600;
-      margin-top: 4px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
     }
     .contact-info {
-      text-align: right;
       font-size: 12px;
       color: var(--muted);
-      line-height: 1.5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 14px;
     }
     .contact-info a {
-      color: inherit;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 500;
     }
     .contact-info a:hover {
-      color: var(--accent);
       text-decoration: underline;
     }
     .section {
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
     .section-title {
-      font-size: 13px;
-      font-weight: 700;
+      font-size: 12.5px;
+      font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.8px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 4px;
-      margin-bottom: 10px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
     }
     .item {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .item-header {
       display: flex;
       justify-content: space-between;
-      font-weight: 600;
-      font-size: 13.5px;
+      font-weight: 700;
+      font-size: 13px;
       color: #0f172a;
     }
     .item-sub {
       display: flex;
       justify-content: space-between;
-      font-style: italic;
       color: var(--muted);
-      font-size: 12.5px;
+      font-size: 12px;
       margin-bottom: 4px;
+    }
+    .profile-p {
+      color: #334155;
+      font-size: 12.5px;
+      line-height: 1.5;
     }
     ul.bullets {
       padding-left: 18px;
-      margin-top: 4px;
+      margin-top: 3px;
     }
     ul.bullets li {
       margin-bottom: 3px;
       color: #334155;
+      line-height: 1.45;
+      font-size: 12px;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 6px 12px;
-      font-size: 12.5px;
+    ul.bullets li strong {
+      color: #0f172a;
     }
-    .skill-cat {
-      font-weight: 600;
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 12px;
+      color: #334155;
+    }
+    .skills-block div {
+      line-height: 1.4;
+    }
+    .skills-block strong {
       color: #0f172a;
     }
     .print-bar {
@@ -118,6 +126,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 10px;
     }
     .btn {
       display: inline-flex;
@@ -139,7 +148,7 @@
     }
     @media print {
       body { background: white; padding: 0; }
-      .page { box-shadow: none; padding: 0; }
+      .page { box-shadow: none; padding: 0; max-width: 100%; }
       .print-bar { display: none; }
     }
   </style>
@@ -152,173 +161,178 @@
 
   <div class="page">
     <header class="header">
-      <div>
-        <h1>SUJAL GUPTA</h1>
-        <div class="subtitle">Software Engineer | C++ &amp; Systems Programming | AI/ML | Backend Engineering</div>
-      </div>
+      <h1>SUJAL KUMAR</h1>
       <div class="contact-info">
-        <div>Jalandhar, Punjab, India</div>
-        <div><a href="mailto:sg127952@gmail.com">sg127952@gmail.com</a></div>
-        <div><a href="https://github.com/Sujal01go" target="_blank">github.com/Sujal01go</a></div>
-        <div><a href="https://linkedin.com/in/sujal-gupta-4198b9368/" target="_blank">linkedin.com/in/sujal-gupta</a></div>
-        <div><a href="https://leetcode.com/u/sujal01go/" target="_blank">leetcode.com/u/sujal01go</a></div>
+        <span>+91-7858040272</span>
+        <span>•</span>
+        <span><a href="mailto:sg127952@gmail.com">sg127952@gmail.com</a></span>
+        <span>•</span>
+        <span><a href="../../index.html">Portfolio</a></span>
+        <span>•</span>
+        <span><a href="https://github.com/Sujal01go" target="_blank">GitHub</a></span>
+        <span>•</span>
+        <span><a href="https://www.linkedin.com/in/sujal-gupta-4198b9368/" target="_blank">LinkedIn</a></span>
       </div>
     </header>
 
+    <!-- PROFILE -->
     <section class="section">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title">PROFILE</h2>
+      <p class="profile-p">
+        B.Tech Mathematics &amp; Computing student at NIT Jalandhar (9.00 CGPA) with hands-on experience building retrieval-augmented AI systems, backend APIs, and C++ systems software. Open-source contributor interested in low-latency engineering, information retrieval, and production-grade applications.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">EDUCATION</h2>
       <div class="item">
         <div class="item-header">
-          <span>Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (NIT Jalandhar)</span>
-          <span>Punjab, India</span>
+          <span>National Institute of Technology (NIT), Jalandhar</span>
+          <span>2025–2029</span>
         </div>
         <div class="item-sub">
-          <span>Bachelor of Technology (B.Tech) in Mathematics &amp; Computing (M&amp;C)</span>
-          <span>2024 – 2028 (Pre-final Year)</span>
+          <span>B.Tech, Mathematics &amp; Computing</span>
+          <span>Jalandhar, India</span>
         </div>
         <ul class="bullets">
-          <li><strong>Academic Standing:</strong> Joint Entrance Examination (JEE) Main Common Rank List (CRL): <strong>21,338</strong> (Top ~1.3% among ~1.6 million candidates).</li>
-          <li><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Discrete Mathematics, Linear Algebra, Probability &amp; Statistics, Operating Systems, DBMS, Computer Networks, Theory of Computation.</li>
+          <li><strong>9.02 CGPA</strong> — among the top 10% of the batch; relevant coursework: Python and Machine Learning.</li>
         </ul>
       </div>
     </section>
 
+    <!-- TECHNICAL SKILLS -->
     <section class="section">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-cat">Languages</div>
-        <div>C++, Python, Java, Dart, C, SQL</div>
-        <div class="skill-cat">AI &amp; Machine Learning</div>
-        <div>Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Azure AI Search, Hugging Face Embeddings, ChromaDB, Vector Search, TensorFlow, LangGraph</div>
-        <div class="skill-cat">Systems &amp; Backend</div>
-        <div>FastAPI, REST APIs, Low-Latency Architecture, Multithreading, Memory Optimization, CMake, Linux / POSIX</div>
-        <div class="skill-cat">Mobile &amp; Frontend</div>
-        <div>Flutter, Dart, React (Learning), Responsive HTML5/CSS3</div>
-        <div class="skill-cat">Databases &amp; Cloud</div>
-        <div>PostgreSQL, Supabase, Firebase, Azure OpenAI, Git, GitHub, Docker</div>
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="skills-block">
+        <div><strong>Programming Languages:</strong> C, C++, Python, Dart, Java</div>
+        <div><strong>Computer Science:</strong> Data Structures &amp; Algorithms, OOP, Problem Solving, STL</div>
+        <div><strong>Backend &amp; Data:</strong> FastAPI, REST APIs, PostgreSQL, SQLAlchemy, relational data modelling</div>
+        <div><strong>AI / Information Retrieval:</strong> RAG, LLMs, embeddings, semantic chunking, vector search, hybrid retrieval, TensorFlow</div>
+        <div><strong>Cloud &amp; Developer Tools:</strong> Azure OpenAI, Azure AI Search, Docker, Git, GitHub, AWS (S3, EC2), Jupyter</div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section">
-      <h2 class="section-title">Featured Projects</h2>
-      
+      <h2 class="section-title">EXPERIENCE</h2>
+
       <div class="item">
         <div class="item-header">
-          <span>InvestIntel AI — Financial Intelligence &amp; RAG Platform</span>
-          <span>Python, FastAPI, Azure OpenAI, Azure AI Search</span>
+          <span>Software Developer — Campus Node</span>
+          <span>2026–Present</span>
         </div>
         <div class="item-sub">
-          <span>AI-Powered Financial Document Analysis &amp; Context-Aware Retrieval</span>
-          <span><a href="https://github.com/Sujal01go/AI-Invester-intelligence-platform" target="_blank">github.com/Sujal01go/AI-Invester-intelligence-platform</a></span>
+          <span>NIT Jalandhar</span>
+          <span>Jalandhar, India</span>
         </div>
         <ul class="bullets">
-          <li>Architected an end-to-end financial document ingestion and chunking pipeline capable of processing 10-K, 10-Q filings and investor transcripts.</li>
-          <li>Engineered hybrid retrieval combining semantic vector search (Azure AI Search &amp; Hugging Face embeddings) with keyword ranking for zero-hallucination context extraction.</li>
-          <li>Integrated GPT-4o context synthesis to accurately extract complex corporate financial KPIs, balance sheet metrics, and sentiment trends via high-throughput FastAPI endpoints.</li>
+          <li>Developing a campus event-management application to centralize event discovery, organizer workflows, and student participation.</li>
+          <li>Designing application workflows and features for managing campus events, organizers, and event information.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Open Source Contributor — GirlScript Summer of Code</span>
+          <span>May–July 2026</span>
+        </div>
+        <div class="item-sub">
+          <span>GirlScript Foundation</span>
+          <span>Remote / Jalandhar, India</span>
+        </div>
+        <ul class="bullets">
+          <li>Collaborated with mentors and developers through Git/GitHub; resolved issues and implemented feature enhancements within contribution and review workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">PROJECTS</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Financial Intelligence &amp; RAG Engine</span>
+          <span>2026</span>
+        </div>
+        <div class="item-sub">
+          <span>Python, FastAPI, Azure OpenAI, Azure AI Search, PostgreSQL, Docker</span>
+          <span><a href="https://github.com/Sujal01go/AI-Invester-intelligence-platform" target="_blank">GitHub</a></span>
+        </div>
+        <ul class="bullets">
+          <li>Built an end-to-end ingestion pipeline for 10-K/10-Q filings: PyMuPDF4LLM converts complex PDFs into structured Markdown while retaining financial tables, headings, and disclosure context.</li>
+          <li>Implemented context-aware semantic chunking and embedding-based indexing in Azure AI Search; hybrid keyword/vector retrieval supplies relevant filing evidence for downstream analysis.</li>
+          <li>Used GPT-4o to extract quantitative KPIs (revenue, net income, operating cash flow, assets and liabilities) and qualitative growth drivers/risk factors; normalized results and persisted structured records in PostgreSQL.</li>
+          <li>Developed FastAPI endpoints and a financial analytics dashboard for KPI inspection, fiscal-year scoping, cross-company comparison, and conversational answers grounded in retrieved filing excerpts.</li>
+          <li><strong>Technology distinction:</strong> Azure AI Search handles retrieval, GPT-4o performs extraction and synthesis, and PostgreSQL stores structured metrics—separating unstructured evidence retrieval from reliable analytical queries.</li>
         </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
           <span>Low-Latency Exchange Matching Engine</span>
-          <span>C++20, STL, CMake, Microbenchmarking</span>
+          <span>In Progress</span>
         </div>
         <div class="item-sub">
-          <span>High-Performance Financial Exchange Order Matching Simulator</span>
-          <span>Financial Technology &amp; Systems</span>
+          <span>C++</span>
+          <span>Systems Programming</span>
         </div>
         <ul class="bullets">
-          <li>Implemented a high-throughput Limit Order Book (LOB) executing Price-Time Priority (FIFO) matching for buy and sell order flows.</li>
-          <li>Optimized internal memory layout and cache locality using custom contiguous order structures and double-ended queues to minimize memory allocations on hot paths.</li>
-          <li>Conducted microsecond-level latency profiling across 100,000+ synthetic order bursts, demonstrating sub-microsecond order insertion and execution latency.</li>
+          <li>Developing a systems-programming project focused on the core exchange workflow: order intake, order-book management, matching, and trade execution.</li>
+          <li>Emphasizing predictable execution paths, efficient memory use, and data-structure choices suited to latency-sensitive workloads rather than general-purpose application abstractions.</li>
+          <li><strong>Technology distinction:</strong> C++ provides fine-grained control over object lifetime, memory layout, and allocation; the project explores these systems-level trade-offs in an exchange-style workload.</li>
+          <li><strong>Current status:</strong> in progress; performance figures and completed feature claims are intentionally omitted until benchmarked and verified.</li>
         </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span>AstroTrack — Mathematical Astronomy &amp; Star Tracker</span>
-          <span>Flutter, Dart, Coordinate Geometry, Sensors</span>
+          <span>Sanjeevani — Herbal Wellness Application</span>
+          <span>Jan–Feb 2026</span>
         </div>
         <div class="item-sub">
-          <span>Offline-First Mobile Astronomy Engine &amp; Constellation Tracker</span>
-          <span><a href="https://github.com/Sujal01go/star-tracker" target="_blank">github.com/Sujal01go/star-tracker</a></span>
+          <span>Flutter, Dart, Firebase</span>
+          <span><a href="https://github.com/Sujal01go/sanjeevani" target="_blank">GitHub</a></span>
         </div>
         <ul class="bullets">
-          <li>Developed an offline astronomical catalog engine utilizing authentic Hipparcos and Yale Bright Star data to render real-time celestial maps.</li>
-          <li>Engineered topocentric spherical trigonometry transformations to accurately compute local Altitude and Azimuth coordinates from J2000.0 epoch in real-time.</li>
-          <li>Integrated hardware gyroscope and accelerometer orientation tracking for augmented reality (AR) night sky alignment.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Autonomous Multi-Agent Software Engineering Team</span>
-          <span>LangGraph, Python, Switch, SQLite</span>
-        </div>
-        <div class="item-sub">
-          <span>Flip the Switch Hackathon</span>
-          <span><a href="https://github.com/Sujal01go/switch-hackathon" target="_blank">github.com/Sujal01go/switch-hackathon</a></span>
-        </div>
-        <ul class="bullets">
-          <li>Constructed an autonomous multi-agent developer system featuring Planner, Coder, Reviewer, and QA agents communicating over Telegram via Switch protocol.</li>
-          <li>Leveraged LangGraph for state-machine orchestration and SQLite checkpointers for persistent fault-tolerant execution.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Sanjeevani — Ayurvedic Herb Intelligence Platform</span>
-          <span>Flutter, Dart, Supabase</span>
-        </div>
-        <div class="item-sub">
-          <span>Herbal Wellness &amp; Direct Farmer Marketplace Concept</span>
-          <span><a href="https://github.com/Sujal01go/sanjeevani" target="_blank">github.com/Sujal01go/sanjeevani</a></span>
-        </div>
-        <ul class="bullets">
-          <li>Built a mobile application mapping symptoms to traditional medicinal herbs with real-time database queries on Supabase.</li>
-          <li>Designed a verified farmer-to-consumer marketplace interface providing transparent pricing and verified medicinal plant listings.</li>
+          <li>Built a cross-platform wellness application with symptom-based recommendations, Firebase Authentication, user profiles, and cart-management workflows.</li>
+          <li>Implemented a Material Design 3 interface for Android, iOS, and Web, using Firebase services for authentication and application data workflows.</li>
         </ul>
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
     <section class="section">
-      <h2 class="section-title">Experience &amp; Community Involvement</h2>
+      <h2 class="section-title">CERTIFICATIONS</h2>
       <div class="item">
         <div class="item-header">
-          <span>GirlScript Summer of Code (GSSoC)</span>
-          <span>Remote</span>
-        </div>
-        <div class="item-sub">
-          <span>Open Source Contributor</span>
-          <span>2026</span>
+          <span>AI/ML for Geodata Analytics | Indian Institute of Remote Sensing (IIRS), ISRO</span>
+          <span>Sep 2026</span>
         </div>
         <ul class="bullets">
-          <li>Selected for national open-source program; contributed to open-source software repositories, resolving issues and submitting pull requests.</li>
+          <li>Completed training focused on applying artificial intelligence and machine learning techniques to geospatial data and analytics.</li>
         </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span>Utkansh Fest — NIT Jalandhar</span>
-          <span>Jalandhar, Punjab</span>
-        </div>
-        <div class="item-sub">
-          <span>Public Relations &amp; Event Organizing Team</span>
-          <span>2025 – 2026</span>
+          <span>Cyber Job Simulation | Deloitte</span>
+          <span>Nov 2026</span>
         </div>
         <ul class="bullets">
-          <li>Coordinated campus-wide and inter-collegiate outreach, managing public relations and communications for the institute's flagship annual cultural festival.</li>
+          <li>Completed a simulated cybersecurity job experience, gaining exposure to practical, role-oriented cyber security work.</li>
         </ul>
       </div>
     </section>
 
+    <!-- ACHIEVEMENTS & ACTIVITIES -->
     <section class="section">
-      <h2 class="section-title">Achievements &amp; Activities</h2>
+      <h2 class="section-title">ACHIEVEMENTS &amp; ACTIVITIES</h2>
       <ul class="bullets">
-        <li><strong>LeetCode:</strong> Solved 200+ algorithmic problems spanning Trees, Dynamic Programming, Graphs, and Advanced Data Structures.</li>
-        <li><strong>JEE Main:</strong> All India Common Rank List (CRL) 21,338 out of ~1.6 million candidates (98.7th percentile).</li>
-        <li><strong>Hackathons:</strong> Competed in HackTU (Thapar Institute), BIS Innovation Hackathon, Google Prompt Wars, and Flip the Switch Hackathon.</li>
-        <li><strong>Bootcamps:</strong> Google Developer Groups on Campus (GDGC) Flutter Bootcamp participant.</li>
+        <li><strong>Solved 250+ DSA questions</strong> on LeetCode.</li>
+        <li><strong>Among the top 10 teams</strong> in BIS Innovation Hackathon.</li>
+        <li><strong>Organizing team member for Utkansh</strong>, the annual cultural festival of NIT Jalandhar; supported event coordination and management.</li>
       </ul>
     </section>
   </div>
