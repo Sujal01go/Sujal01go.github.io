@@ -324,20 +324,15 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   VISITOR COUNTER SIMULATION
+   VISITOR COUNTER (Real-Time Live Counter via VisitorBadge API)
    ========================================================================== */
 function initVisitorCounter() {
-  const counterEl = document.getElementById('visitorCount');
-  if (!counterEl) return;
-
-  let count = localStorage.getItem('sg_visitor_count');
-  if (!count) {
-    count = 1438;
-  } else {
-    count = parseInt(count, 10) + 1;
+  const badgeImg = document.querySelector('.visitor-badge-img');
+  if (badgeImg) {
+    // Bust browser cache to fetch actual incremented hit on each session
+    const baseUrl = 'https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fsujal01go.github.io&label=visitors&labelColor=%230f172a&countColor=%231e40af&style=flat';
+    badgeImg.src = `${baseUrl}&_t=${Date.now()}`;
   }
-  localStorage.setItem('sg_visitor_count', count);
-  counterEl.textContent = count.toLocaleString();
 }
 
 /* ==========================================================================
