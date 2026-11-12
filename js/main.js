@@ -115,33 +115,31 @@ const projectDatabase = {
     status: "Resume Project • 2026",
     image: "assets/images/project-investintel.svg",
     github: "https://github.com/Sujal01go/AI-Invester-intelligence-platform",
-    overview: "Built an end-to-end ingestion pipeline for 10-K/10-Q corporate financial filings: PyMuPDF4LLM converts complex PDFs into structured Markdown while retaining financial tables, headings, and disclosure context. Implemented context-aware semantic chunking and embedding-based indexing in Azure AI Search; hybrid keyword/vector retrieval supplies relevant filing evidence for downstream analysis.",
+    overview: "An AI-powered financial filing intelligence platform that converts SEC 10-K/10-Q corporate disclosures into structured Markdown, generates hybrid search indexes with Azure AI Search, and extracts financial KPIs into PostgreSQL using FastAPI and GPT-4o.",
     technologies: ["Python", "FastAPI", "Azure OpenAI", "Azure AI Search", "PostgreSQL", "Docker", "PyMuPDF4LLM", "GPT-4o"],
     keyFeatures: [
-      "PyMuPDF4LLM end-to-end PDF-to-Markdown conversion preserving financial multi-row balance sheets, headings, and disclosure notes.",
-      "Context-aware semantic chunking and vector indexing in Azure AI Search with hybrid BM25 and vector retrieval.",
-      "GPT-4o automated extraction of quantitative KPIs (revenue, net income, operating cash flow, assets and liabilities) and qualitative growth drivers/risk factors into PostgreSQL.",
-      "FastAPI endpoints and financial analytics dashboard for KPI inspection, fiscal-year scoping, cross-company comparison, and conversational Q&A.",
-      "Technology distinction: Azure AI Search handles retrieval, GPT-4o performs extraction and synthesis, and PostgreSQL stores structured metrics—separating unstructured evidence retrieval from reliable analytical queries."
+      "PyMuPDF4LLM PDF-to-Markdown ingestion preserving complex financial tables and disclosure context.",
+      "Hybrid BM25 keyword and vector retrieval via Azure AI Search for grounded evidence retrieval.",
+      "Automated extraction of quantitative KPIs and qualitative risk factors into PostgreSQL via GPT-4o.",
+      "FastAPI REST endpoints and analytics interface for conversational Q&A and cross-company analysis."
     ],
-    architecture: "10-K/10-Q PDFs -> PyMuPDF4LLM (Markdown + Tables) -> Semantic Chunker -> Azure AI Search (Hybrid) -> GPT-4o Extraction -> PostgreSQL Structured Tables -> FastAPI Analytics API."
+    architecture: "10-K/10-Q PDFs -> PyMuPDF4LLM -> Azure AI Search (Hybrid) -> GPT-4o Extraction -> PostgreSQL -> FastAPI Analytics."
   },
   matching_engine: {
-    title: "Low-Latency Exchange Matching Engine",
+    title: "Exchange Matching Engine",
     category: "C++ / Systems Programming",
     status: "Resume Project • In Progress",
     image: "assets/images/project-matching-engine.svg",
     github: "https://github.com/Sujal01go",
-    overview: "Developing a systems-programming project focused on the core exchange workflow: order intake, order-book management, matching, and trade execution. Emphasizing predictable execution paths, efficient memory use, and data-structure choices suited to latency-sensitive workloads rather than general-purpose application abstractions.",
-    technologies: ["C++", "STL", "Systems Programming", "Order Book", "Price-Time Priority", "Memory Layout Optimization"],
+    overview: "A C++ systems-programming simulation of core financial exchange operations: order intake, order-book management, price-time priority matching, and trade execution.",
+    technologies: ["C++", "STL", "Order Book", "Price-Time Priority", "Algorithms", "CMake"],
     keyFeatures: [
-      "Core exchange workflow simulation: order intake, order-book management, matching, and trade execution.",
-      "Predictable execution paths and efficient memory use tailored to low-latency financial systems.",
-      "Data-structure choices optimized for latency-sensitive workloads rather than general-purpose abstractions.",
-      "Technology distinction: C++ provides fine-grained control over object lifetime, memory layout, and allocation; the project explores these systems-level trade-offs in an exchange-style workload.",
-      "Current status: In progress; performance figures and completed feature claims are intentionally omitted until benchmarked and verified."
+      "L3 order book simulation supporting buy and sell limit/market order management.",
+      "Price-time priority (FIFO) order matching and trade generation.",
+      "Efficient data structures and memory layouts optimized for high-throughput order processing.",
+      "Engineered in modern C++ utilizing the Standard Template Library (STL) and CMake build automation."
     ],
-    architecture: "Order Intake Stream -> Price-Time Priority FIFO Matching Core -> Cache-Conscious Order Book Storage -> Fill / Execution Dispatcher."
+    architecture: "Order Intake Stream -> Price-Time Priority FIFO Matching Core -> Cache-Conscious Order Book Storage -> Execution Dispatcher."
   },
   sanjeevani: {
     title: "Sanjeevani — Herbal Wellness Application",

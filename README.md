@@ -1,7 +1,7 @@
 # Sujal Kumar — Personal Engineering Portfolio
 
-> **High-Performance Systems & Intelligent Retrieval**  
-> An editorial, high-craft, and mobile-optimized portfolio for **Sujal Kumar**, an undergraduate in **Mathematics & Computing (M&C)** at **NIT Jalandhar** (9.02 CGPA, Top 10% Batch), specializing in **C++ & Systems Programming**, **Low-Latency Order Books**, **AI/ML (Fine-Tuning, Inferencing, Agent Loops, RAG)**, and **Backend Infrastructure**.
+> **Software Engineering, AI/ML & Systems**  
+> An editorial, high-craft, and mobile-optimized portfolio for **Sujal Kumar**, an undergraduate in **Mathematics & Computing (M&C)** at **NIT Jalandhar**, specializing in **Software Engineering**, **C++ & Python**, **AI/ML (Fine-Tuning, Inferencing, Agent Loops, RAG)**, and **Backend Infrastructure**.
 
 ---
 
@@ -11,13 +11,12 @@
   - Exclusively crafted in a pristine, high-contrast light theme with obsidian typography (`#0f172a`), refined neutral borders, and sapphire accents (`#1e40af`).
   - No dark mode toggles or visual clutter.
 - **Distinctive Homepage Architecture**:
-  - **Clean Hero**: *"Hi, I'm Sujal Kumar."* with status pill `NIT JALANDHAR • B.TECH M&C • 9.02 CGPA`.
+  - **Clean Hero**: *"Hi, I'm Sujal Kumar."* with status pill `NIT JALANDHAR • B.TECH MATHEMATICS & COMPUTING`.
   - **Live Systems Console**: Interactive terminal on the hero displaying live telemetry, compiler specs, active projects, and internship availability.
-  - **Three Core Engineering Pillars**: Structured breakdown of C++ Systems, Grounded RAG, and Production Backend.
-  - **Architecture Distinction Callouts**: Specific callout on each project card detailing its technical engineering trade-offs.
+  - **Streamlined Project Cards**: Compact, readable descriptions with 1-click modal deep dives.
 - **Resume-Verified Core Projects**:
   1. **Financial Intelligence & RAG Engine** (2026): Python, FastAPI, Azure OpenAI (GPT-4o), Azure AI Search, PostgreSQL, Docker, PyMuPDF4LLM.
-  2. **Low-Latency Exchange Matching Engine** (In Progress): C++, STL, L3 Order Book, Price-Time Priority FIFO, predictable execution paths.
+  2. **Exchange Matching Engine** (In Progress): C++, STL, L3 Order Book, Price-Time Priority FIFO, CMake.
   3. **Sanjeevani — Herbal Wellness Application** (2026): Flutter, Dart, Firebase, Material Design 3 for Android, iOS, and Web.
   4. **AstroTrack — Astronomy & Star Tracker**: Offline-first coordinate geometry engine converting J2000 coordinates to topocentric Alt/Az (Flutter, Dart, Hipparcos Catalog).
   5. **Autonomous Multi-Agent Engineering Team**: LangGraph, Python, Switch, Telegram, SQLite checkpointers (*Flip the Switch Hackathon*).
