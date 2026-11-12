@@ -172,7 +172,7 @@
             </tr>
             <tr>
               <td class="key">PROBLEM SOLV</td>
-              <td class="val"><strong>250+ LeetCode DSA</strong> Solved</td>
+              <td class="val"><strong id="heroLeetCodeCount">239+ LeetCode DSA</strong> Solved</td>
             </tr>
             <tr>
               <td class="key">LANGUAGES</td>
@@ -456,24 +456,6 @@
             </div>
           </div>
         </article>
-            <div class="project-tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Time-Series</span>
-              <span class="tech-tag">Transformers</span>
-              <span class="tech-tag">ISRO Data</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Sujal01go" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                GitHub Profile
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
-              </a>
-              <a href="#" data-project-trigger="aditya" class="project-link-btn">
-                Research Details
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"></path></svg>
-              </a>
-            </div>
-          </div>
-        </article>
 
       </div>
     </div>
@@ -572,21 +554,133 @@
           </div>
         </div>
 
-        <!-- Problem Solving & LeetCode Widget -->
-        <div class="academic-card" style="justify-content: space-between;">
+        <!-- Problem Solving & LeetCode Live Telemetry Widget -->
+        <div class="academic-card lc-card" style="justify-content: space-between;">
           <div>
-            <span class="badge badge-amber">Algorithmic Problem Solving</span>
-            <div style="margin-top: 1rem;">
-              <div style="font-size: 3rem; font-weight: 800; font-family: var(--mono); color: #f59e0b; line-height: 1;">250+</div>
-              <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.35rem;">DSA Questions Solved</div>
-              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">
-                Actively practicing on LeetCode covering dynamic programming, binary search trees, graph traversals, and two-pointer patterns.
-              </p>
+            <div class="card-telemetry-header">
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <svg class="telemetry-icon" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span class="badge badge-amber">LeetCode Problem Solving</span>
+              </div>
+              <span class="live-pill"><span class="live-pulse"></span> LIVE SYNC</span>
+            </div>
+
+            <div class="lc-stats-hero">
+              <div class="lc-big-stat">
+                <span class="lc-number" id="lcTotalSolved">239</span>
+                <span class="lc-label">Problems Solved</span>
+              </div>
+              <div class="lc-acceptance">
+                <span class="lc-acc-rate" id="lcAcceptance">72.7%</span>
+                <span class="lc-acc-label">Acceptance (274 / 377)</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Difficulty Progress Bar -->
+            <div class="lc-breakdown-bar">
+              <div class="bar-segment bar-easy" style="width: 42.7%;" title="Easy: 102"></div>
+              <div class="bar-segment bar-medium" style="width: 52.3%;" title="Medium: 125"></div>
+              <div class="bar-segment bar-hard" style="width: 5.0%;" title="Hard: 12"></div>
+            </div>
+
+            <!-- Difficulty Pills -->
+            <div class="lc-difficulty-row">
+              <div class="diff-badge easy">
+                <span class="diff-dot easy"></span>
+                <span class="diff-name">Easy</span>
+                <strong id="lcEasyCount">102</strong>
+              </div>
+              <div class="diff-badge medium">
+                <span class="diff-dot medium"></span>
+                <span class="diff-name">Med</span>
+                <strong id="lcMediumCount">125</strong>
+              </div>
+              <div class="diff-badge hard">
+                <span class="diff-dot hard"></span>
+                <span class="diff-name">Hard</span>
+                <strong id="lcHardCount">12</strong>
+              </div>
             </div>
           </div>
-          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule);">
-            <a href="https://leetcode.com/u/sujal01go/" target="_blank" rel="noopener noreferrer" class="button" style="width: 100%;">
-              View LeetCode Profile (250+)
+
+          <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--rule);">
+            <a href="https://leetcode.com/u/sujal01go/" target="_blank" rel="noopener noreferrer" class="button button-telemetry">
+              View LeetCode Profile (@sujal01go)
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 13px; height: 13px;"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- GitHub Live Activity & Contribution Telemetry Card -->
+        <div class="academic-card gh-telemetry-card">
+          <div class="card-telemetry-header">
+            <div style="display: flex; gap: 0.6rem; align-items: center;">
+              <svg class="telemetry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span class="badge badge-blue">GitHub Activity &amp; Repositories</span>
+              <span class="gh-handle">@Sujal01go</span>
+            </div>
+            <span class="live-pill"><span class="live-pulse"></span> LIVE SYNC</span>
+          </div>
+
+          <!-- GitHub Key Stats Grid -->
+          <div class="gh-stats-grid">
+            <div class="gh-stat-box">
+              <span class="gh-stat-val" id="ghRepoCount">20</span>
+              <span class="gh-stat-label">Public Repos</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-val" id="ghStarCount">13</span>
+              <span class="gh-stat-label">Total Stars</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-val" id="ghFollowersCount">6</span>
+              <span class="gh-stat-label">Followers</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-val">C++ &amp; Python</span>
+              <span class="gh-stat-label">Top Languages</span>
+            </div>
+          </div>
+
+          <!-- Real-Time GitHub Contribution Activity Heatmap -->
+          <div class="gh-heatmap-container">
+            <div class="gh-heatmap-header">
+              <span>Contribution Activity Heatmap</span>
+              <span>GitHub API</span>
+            </div>
+            <div class="gh-heatmap-scroll">
+              <img src="https://ghchart.rshah.org/1e40af/Sujal01go" alt="Sujal01go GitHub Contribution Heatmap" class="gh-heatmap-img" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Dynamic Recent Repositories Container -->
+          <div class="gh-recent-repos" id="ghRecentRepos">
+            <a href="https://github.com/Sujal01go/star-tracker" target="_blank" rel="noopener noreferrer" class="gh-repo-chip">
+              <span class="repo-name">star-tracker</span>
+              <span class="repo-lang">Dart</span>
+            </a>
+            <a href="https://github.com/Sujal01go/AI-Invester-intelligence-platform" target="_blank" rel="noopener noreferrer" class="gh-repo-chip">
+              <span class="repo-name">AI-Invester-intelligence-platform</span>
+              <span class="repo-lang">Python</span>
+            </a>
+            <a href="https://github.com/Sujal01go/switch-hackathon" target="_blank" rel="noopener noreferrer" class="gh-repo-chip">
+              <span class="repo-name">switch-hackathon</span>
+              <span class="repo-lang">Python</span>
+            </a>
+            <a href="https://github.com/Sujal01go/prompt-wars-5" target="_blank" rel="noopener noreferrer" class="gh-repo-chip">
+              <span class="repo-name">prompt-wars-5</span>
+              <span class="repo-lang">TypeScript</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--rule);">
+            <a href="https://github.com/Sujal01go" target="_blank" rel="noopener noreferrer" class="button button-telemetry">
+              Explore All 20 Repositories on GitHub
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 13px; height: 13px;"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path></svg>
             </a>
           </div>

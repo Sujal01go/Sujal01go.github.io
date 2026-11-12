@@ -1051,8 +1051,9 @@ button {
    ========================================================================== */
 .academics-grid {
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 2rem;
+  min-width: 0;
 }
 
 .academic-card {
@@ -1064,6 +1065,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .academic-degree {
@@ -1098,6 +1101,334 @@ button {
 .coursework-tags {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* ==========================================================================
+   LIVE CODING TELEMETRY (LeetCode & GitHub APIs)
+   ========================================================================== */
+.telemetry-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.card-telemetry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+
+.live-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-ring 1.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.lc-stats-hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.lc-big-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.lc-number {
+  font-size: 2.75rem;
+  font-weight: 800;
+  font-family: var(--mono);
+  color: #f59e0b;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.lc-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.lc-acceptance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.lc-acc-rate {
+  font-family: var(--mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.lc-acc-label {
+  font-size: 0.72rem;
+  color: var(--text-subtle);
+}
+
+.lc-breakdown-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--rule);
+  gap: 2px;
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.bar-segment {
+  height: 100%;
+  transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.bar-easy {
+  background: #10b981;
+}
+
+.bar-medium {
+  background: #f59e0b;
+}
+
+.bar-hard {
+  background: #ef4444;
+}
+
+.lc-difficulty-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.diff-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  font-size: 0.78rem;
+  min-width: 0;
+}
+
+.diff-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+
+.diff-dot.easy {
+  background: #10b981;
+}
+
+.diff-dot.medium {
+  background: #f59e0b;
+}
+
+.diff-dot.hard {
+  background: #ef4444;
+}
+
+.diff-name {
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-right: auto;
+}
+
+.diff-badge strong {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* GitHub Telemetry Card */
+.gh-telemetry-card {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.gh-handle {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.gh-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.gh-stat-box {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gh-stat-val {
+  font-family: var(--mono);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.gh-stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+  font-weight: 600;
+}
+
+.gh-heatmap-container {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.gh-heatmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.gh-heatmap-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.25rem;
+  min-width: 0;
+  max-width: 100%;
+}
+}
+
+.gh-heatmap-img {
+  max-width: none;
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+  display: block;
+}
+
+.gh-recent-repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.gh-repo-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.gh-repo-chip:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.repo-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.repo-lang {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-soft);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+
+.button-telemetry {
+  width: 100%;
+  min-height: 42px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  justify-content: center;
+}
   gap: 0.4rem;
 }
 
@@ -1572,7 +1903,7 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .academics-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -1888,17 +2219,40 @@ button {
 
   /* Education & Academics */
   .academics-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.25rem;
+    min-width: 0;
+    width: 100%;
   }
   .academic-card {
     padding: 1.25rem;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .academic-degree {
     font-size: 1.2rem;
   }
   .academic-dept {
     font-size: 0.95rem;
+  }
+  .lc-stats-hero {
+    align-items: flex-start;
+  }
+  .lc-acceptance {
+    align-items: flex-start;
+  }
+  .diff-badge {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.74rem;
+  }
+  .gh-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .gh-recent-repos {
+    grid-template-columns: 1fr;
   }
 
   /* Skills Matrix */

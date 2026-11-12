@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyEmail();
   initVisitorCounter();
   initContactForm();
+  initLiveCodingStats();
 });
 
 /* ==========================================================================
@@ -356,4 +357,111 @@ function initContactForm() {
       window.location.href = `mailto:sg127952@gmail.com?subject=${subject}&body=${body}`;
     }, 400);
   });
+}
+
+/* ==========================================================================
+   LIVE CODING TELEMETRY (Scraping/Querying LeetCode & GitHub APIs)
+   ========================================================================== */
+async function initLiveCodingStats() {
+  // 1. Fetch LeetCode Real-Time Telemetry
+  try {
+    let lcData = null;
+    try {
+      const res = await fetch('https://alfa-leetcode-api.onrender.com/sujal01go/solved');
+      if (res.ok) lcData = await res.json();
+    } catch (e) {
+      // Fallback API if primary is cold
+      const resFallback = await fetch('https://leetcode-api-faisalshohag.vercel.app/sujal01go');
+      if (resFallback.ok) lcData = await resFallback.json();
+    }
+
+    if (lcData) {
+      const total = lcData.solvedProblem || lcData.totalSolved || 239;
+      const easy = lcData.easySolved || 102;
+      const medium = lcData.mediumSolved || 125;
+      const hard = lcData.hardSolved || 12;
+
+      // Update counters
+      const totalEl = document.getElementById('lcTotalSolved');
+      const easyEl = document.getElementById('lcEasyCount');
+      const medEl = document.getElementById('lcMediumCount');
+      const hardEl = document.getElementById('lcHardCount');
+      const heroLc = document.getElementById('heroLeetCodeCount');
+
+      if (totalEl) totalEl.textContent = total;
+      if (easyEl) easyEl.textContent = easy;
+      if (medEl) medEl.textContent = medium;
+      if (hardEl) hardEl.textContent = hard;
+      if (heroLc) heroLc.textContent = `${total}+ LeetCode DSA`;
+
+      // Update breakdown bar
+      const barEasy = document.querySelector('.bar-segment.bar-easy');
+      const barMed = document.querySelector('.bar-segment.bar-medium');
+      const barHard = document.querySelector('.bar-segment.bar-hard');
+      if (barEasy && barMed && barHard && total > 0) {
+        barEasy.style.width = `${((easy / total) * 100).toFixed(1)}%`;
+        barMed.style.width = `${((medium / total) * 100).toFixed(1)}%`;
+        barHard.style.width = `${((hard / total) * 100).toFixed(1)}%`;
+        barEasy.title = `Easy: ${easy}`;
+        barMed.title = `Medium: ${medium}`;
+        barHard.title = `Hard: ${hard}`;
+      }
+
+      // Acceptance Rate
+      const accNum = lcData.acSubmissionNum || lcData.totalSubmissions;
+      if (accNum && accNum[0]) {
+        const totalSubmissions = lcData.totalSubmissionNum ? lcData.totalSubmissionNum[0]?.submissions : 377;
+        const accepted = accNum[0]?.submissions || 274;
+        const rate = totalSubmissions > 0 ? ((accepted / totalSubmissions) * 100).toFixed(1) : '72.7';
+        const accEl = document.getElementById('lcAcceptance');
+        if (accEl) accEl.textContent = `${rate}% (${accepted} / ${totalSubmissions})`;
+      }
+    }
+  } catch (err) {
+    console.log('Using verified fallback LeetCode metrics');
+  }
+
+  // 2. Fetch GitHub Real-Time User & Repository Telemetry
+  try {
+    const userRes = await fetch('https://api.github.com/users/Sujal01go');
+    if (userRes.ok) {
+      const u = await userRes.json();
+      if (u.public_repos) {
+        const repoEl = document.getElementById('ghRepoCount');
+        if (repoEl) repoEl.textContent = u.public_repos;
+      }
+      if (u.followers !== undefined) {
+        const followersEl = document.getElementById('ghFollowersCount');
+        if (followersEl) followersEl.textContent = u.followers;
+      }
+    }
+
+    const reposRes = await fetch('https://api.github.com/users/Sujal01go/repos?sort=pushed&per_page=8');
+    if (reposRes.ok) {
+      const repos = await reposRes.json();
+      if (Array.isArray(repos) && repos.length > 0) {
+        // Calculate stars
+        const totalStars = repos.reduce((sum, r) => sum + (r.stargazers_count || 0), 0);
+        const starEl = document.getElementById('ghStarCount');
+        if (starEl && totalStars > 0) starEl.textContent = totalStars;
+
+        // Render recent active repositories
+        const reposContainer = document.getElementById('ghRecentRepos');
+        if (reposContainer) {
+          const topRepos = repos.filter(r => !r.fork && r.name !== 'Sujal01go').slice(0, 4);
+          if (topRepos.length > 0) {
+            reposContainer.innerHTML = topRepos.map(r => `
+              <a href="${r.html_url}" target="_blank" rel="noopener noreferrer" class="gh-repo-chip" title="${r.description || r.name}">
+                <span class="repo-name">${r.name}</span>
+                ${r.language ? `<span class="repo-lang">${r.language}</span>` : ''}
+                ${r.stargazers_count > 0 ? `<span class="repo-stars">★ ${r.stargazers_count}</span>` : ''}
+              </a>
+            `).join('');
+          }
+        }
+      }
+    }
+  } catch (err) {
+    console.log('Using verified fallback GitHub metrics');
+  }
 }
