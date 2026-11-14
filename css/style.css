@@ -530,6 +530,20 @@ button {
   border-color: var(--accent-border);
 }
 
+.focus-chip.highlight-green {
+  background: var(--success-light);
+  color: var(--success);
+  border-color: var(--success-border);
+  font-weight: 700;
+}
+
+.focus-chip.highlight-purple {
+  background: var(--purple-light);
+  color: var(--purple);
+  border-color: var(--purple-border);
+  font-weight: 700;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1490,7 +1504,6 @@ button {
   min-width: 0;
   max-width: 100%;
 }
-}
 
 .gh-heatmap-img {
   max-width: none;
@@ -1553,8 +1566,6 @@ button {
   font-size: 0.85rem;
   font-weight: 600;
   justify-content: center;
-}
-  gap: 0.4rem;
 }
 
 /* ==========================================================================
@@ -1621,6 +1632,20 @@ button {
   color: var(--accent);
   font-weight: 700;
   border: 1px solid var(--accent-border);
+}
+
+.skill-pill.highlight-green {
+  background: var(--success-light);
+  color: var(--success);
+  font-weight: 700;
+  border: 1px solid var(--success-border);
+}
+
+.skill-pill.highlight-purple {
+  background: var(--purple-light);
+  color: var(--purple);
+  font-weight: 700;
+  border: 1px solid var(--purple-border);
 }
 
 /* ==========================================================================
